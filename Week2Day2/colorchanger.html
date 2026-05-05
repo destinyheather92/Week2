@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Changer</title>
+    <style>
+      body {
+        font-family: "arial narrow";
+        text-align: center;
+      }
+      section {
+        width: 75%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 2px;
+        margin: 0px auto;
+        padding: 5px;
+      }
+
+      .box {
+        margin: 30px;
+        height: 75px;
+        width: 75px;
+        border: 4px solid black;
+        box-shadow: 8px 8px 8px black;
+        transition:
+          width 2s,
+          height 2s,
+          background-color 1s,
+          rotate 2s;
+      }
+
+      .box:hover {
+        width: 150px;
+        height: 150px;
+        rotate: 180deg;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box" style="background-color: #6b5b95"></div>
+      <div class="box" style="background-color: #d64161"></div>
+      <div class="box" style="background-color: #80ced6"></div>
+      <div class="box" style="background-color: #f9d5e5"></div>
+      <div class="box" style="background-color: rgb(54, 174, 255)"></div>
+      <div class="box" style="background-color: rgb(217, 238, 208)"></div>
+      <div class="box" style="background-color: rgb(236, 37, 210)"></div>
+      <div class="box" style="background-color: rgb(245, 175, 134)"></div>
+      <div class="box" style="background-color: rgb(149, 111, 209)"></div>
+    </section>
+        <script src="./colorChanger.js"></script>
+  </body>
+</html>
