@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #444444 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 10;
+            position: relative;
+        }
+
+        .skull-emoji {
+            font-size: 120px;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+            margin: 0 15px;
+        }
+
+        .skull-emoji:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .skull-emoji:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .emoji-line {
+            font-size: 60px;
+            margin: 20px 0;
+            letter-spacing: 15px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+   h1 {
+    font-size: 120px;
+    color: #fff;
+    text-shadow: 
+        0 0 30px rgba(65, 105, 225, 0.9),   /* royal blue */
+        0 0 60px rgba(159, 225, 247, 0.8);  /* light blue */
+    font-weight: bold;
+    letter-spacing: 10px;
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 
+            0 0 30px rgba(65, 105, 225, 0.9),   /* royal blue */
+            0 0 60px rgba(173, 216, 230, 0.8);  /* light blue */
+    }
+    50% {
+        text-shadow: 
+            0 0 40px rgba(200, 162, 255, 0.9),  /* light purple */
+            0 0 80px rgba(147, 112, 219, 0.8),  /* medium purple */
+            0 0 110px rgba(75, 0, 130, 0.9);    /* dark purple */
+    }
+}
+
+        h2 {
+            font-size: 32px;
+            color: #fff;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 18px;
+            color: #f0f0f0;
+            margin: 15px 0 30px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #3f0746 0%, #ffbffa 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+            box-shadow: 0 0 20px rgba(245, 87, 108, 0.5);
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 40px rgba(69, 10, 109, 0.8);
+            background: linear-gradient(135deg, #bd91f7 0%, #4a14c7 100%);
+        }
+
+        /* Glitter particles */
+        .glitter {
+            position: fixed;
+            pointer-events: none;
+            font-size: 20px;
+            animation: sparkle 2s ease-in-out forwards;
+        }
+
+        @keyframes sparkle {
+            0% {
+                opacity: 1;
+                transform: translate(0, 0) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(var(--tx), var(--ty)) scale(0);
+            }
+        }
+
+        /* Floating sunflowers background */
+        .sunflower {
+            position: fixed;
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 1;
+            font-size: 80px;
+            animation: float-around 20s linear infinite;
+        }
+
+        @keyframes float-around {
+            0% {
+                transform: translateX(0) translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateX(100px) translateY(-100px) rotate(180deg);
+            }
+            100% {
+                transform: translateX(0) translateY(0) rotate(360deg);
+            }
+        }
+
+        .sunflower:nth-child(1) {
+            top: 10%;
+            left: 5%;
+            animation-duration: 25s;
+        }
+
+        .sunflower:nth-child(2) {
+            top: 60%;
+            right: 5%;
+            animation-duration: 30s;
+        }
+
+        .sunflower:nth-child(3) {
+            bottom: 10%;
+            left: 50%;
+            animation-duration: 35s;
+        }
+
+        .sunflower:nth-child(4) {
+            top: 30%;
+            right: 30%;
+            animation-duration: 28s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating sunflowers background -->
+    <div class="sunflower"><img width="100px" class="skull-emoji"src="./daisy-30.png" alt=""></div>
+    <div class="sunflower"><img width="100px" class="skull-emoji"src="./daisy-30.png" alt=""></div>
+    <div class="sunflower"><img width="100px" class="skull-emoji"src="./daisy-30.png" alt=""></div>
+    <div class="sunflower"><img width="100px" class="skull-emoji"src="./daisy-30.png" alt=""></div>
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="emoji-line">
+            <span ><img width="200px" class="skull-emoji"src="./skull-61.png" alt=""></span>
+            <span ><img width="200px" class="skull-emoji"src="./skull-61.png" alt=""></span>
+            <span ><img width="200px" class="skull-emoji"src="./skull-61.png" alt=""></span>
+        </div>
+        
+        <h1>404</h1>
+        
+        <h2>Page Not Found</h2>
+        
+        <p>Looks like this page went to the other side! 🕸️</p>
+        <p style="font-size: 14px; opacity: 0.9;">But don't worry, you can find your way back:</p>
+        
+        <a href="/index.html" class="button">Back to Home </a>
+        
+    </div>
+
+    <script>
+        // Create glitter effect on mouse move
+        document.addEventListener('mousemove', (e) => {
+            // Random chance to create glitter
+            if (Math.random() > 0.85) {
+                createGlitter(e.clientX, e.clientY);
+            }
+        });
+
+        function createGlitter(x, y) {
+            const glitter = document.createElement('div');
+            glitter.className = 'glitter';
+            
+            // Random glitter emoji
+            const glitterEmojis = ['💀', '☠️', '🕷️', '🕸️', '👁️'];
+            glitter.textContent = glitterEmojis[Math.floor(Math.random() * glitterEmojis.length)];
+            
+            glitter.style.left = x + 'px';
+            glitter.style.top = y + 'px';
+            
+            // Random direction
+            const tx = (Math.random() - 0.5) * 100;
+            const ty = (Math.random() - 0.5) * 100;
+            glitter.style.setProperty('--tx', tx + 'px');
+            glitter.style.setProperty('--ty', ty + 'px');
+            
+            document.body.appendChild(glitter);
+            
+            // Remove after animation
+            setTimeout(() => glitter.remove(), 2000);
+        }
+
+        // Create random glitter particles on page load
+        window.addEventListener('load', () => {
+            for (let i = 0; i < 10; i++) {
+                setTimeout(() => {
+                    createGlitter(
+                        Math.random() * window.innerWidth,
+                        Math.random() * window.innerHeight
+                    );
+                }, i * 200);
+            }
+        });
+    </script>
+</body>
+</html>
