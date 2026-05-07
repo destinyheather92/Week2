@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To Do List</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+
+    .filters {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>To Do List</h1>
+
+  <input type="text" id="task-input" placeholder="Enter a task" />
+
+  <button id="add-btn">Add Task</button>
+  <button id="clear-btn">Clear All</button>
+
+  <div class="filters">
+    <button id="all-btn">All</button>
+    <button id="done-btn">Done</button>
+    <button id="not-done-btn">Not Done</button>
+  </div>
+
+  <ul id="task-list"></ul>
+
+  <script src="todo.js"></script>
+</body>
+</html>
